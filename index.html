@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/7f7e32db51.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/content.css">
+    <link rel="stylesheet" href="styles/options.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+
+    <script src="scripts/modules.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+
+</head>
+
+<body>
+
+
+    
+    <div class="options-menu-hover options"></div>
+    <div class="options-menu options">
+        <div class="options-list">
+
+            <div class="options-header">
+                <span class="options-title">Settings</span>
+                <span class="options-quit"> <i class="fas fa-times"></i> </span>
+            </div>
+
+
+            <div class="options-list-container">
+
+                <div class="options-separator">Time</div>
+                <div class="options-worklimit option-item">
+                    <span>Enter the minutes of the work block</span>
+                    <input type="number" value="25" id="workLimite">
+                </div>
+
+                <div class="options-breaklimit option-item">
+                    <span>Enter the minutes of the break block</span>
+                    <input type="number" value="5" id="breakLimite">
+                </div>
+
+
+                <div class="options-separator">Alarm</div>
+                <div class="options-defaultAlarm option-item">
+                    <span>Do you wanna use the default alarm?</span>
+                    <input type="checkbox" defaultChecked="true" checked="true" id="useCustomURL">
+                </div>
+
+                <div class="options-urlAlarm option-item">
+                    <span>Enter custom URL (MP3 file)</span>
+                    <input type="text" placeholder="Custom URL" id="customURL">
+                </div>
+
+                <div class="options-alarmVolume option-item">
+                    <span>Enter an Alarm Volume</span>
+                    <input type="number" min="0" max="100" value="100" id="alarmVolume">
+                </div>
+
+                <div class="options-alarmTest">
+                    <div class="options-alarmTest-button">Test alarm</div>
+                    <div class="options-alarmTestStop-button">Stop</div>
+                </div>
+
+                <div class="options-disclaimer">
+                    *Settings will be saved when you press x
+                </div>
+                <div class="options-disclaimer">
+                    Made by Ismael Cortés Gutiérrez
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <header>
+        <span  class="header-title">Pomodoro Technique</span>
+        <span class="header-option"> <i class="fas fa-cog"></i> </span>
+    </header>
+
+
+    <div class="container">
+
+        <div class="counter-container">
+            <div class="counter-numbers">
+                <span class="counter-minutes">00</span>
+                <span class="couter-separator" >:</span>
+                <span class="counter-seconds">00</span>
+            </div>
+            <div class="counter-buttons">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+                <div class="alarm-button blocked"><i class="fas fa-stopwatch"></i></div>
+            </div>
+        </div>
+
+        <div class="list-container">
+            <div class="list">
+                <div class="list-row row-header">
+                    <div class="list-cell list-header">Beginning time</div>
+                    <div class="list-cell list-header">Ending time</div>
+                    <div class="list-cell cell-type list-header">Block type</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
