@@ -42,3 +42,5 @@ var alarmAudio = new Audio(defaultAudioURL);
 var alarmAudioTest = new Audio(defaultAudioURL);
 alarmAudio.loop = true;
 alarmAudioTest.loop  = true;
+
+updateOptionsValues();

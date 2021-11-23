@@ -9,6 +9,7 @@ playButton.addEventListener("click", () => {
             playButton.innerHTML = '<i class="fas fa-play"></i>';
         }
         playButton.classList.toggle("played");
+
     }
 });
 

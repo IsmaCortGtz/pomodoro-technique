@@ -112,4 +112,3 @@ function updateOptionsValues(){
     }
     alarmAudio.volume = parseInt(audioVolumeValue.value) / 100;
 }
-updateOptionsValues();
