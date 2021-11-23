@@ -10,22 +10,22 @@ function playTime(){
 }
 
 
-function endTime(){
+function endTime(typeOfBlock){
     playAlarm();
     second = 0;
     minutes = 0;
     refreshCounter();
     endTimeDate = new Date;
 
-    let typeText = working ? "Work block" : "Breake block";
     let endTimeText = intToString(endTimeDate.getHours()) + ":" + intToString(endTimeDate.getMinutes());
     let beginTimeText = intToString(beginTimeDate.getHours()) + ":" + intToString(beginTimeDate.getMinutes());
+    working ? currentWorkNumber++ : undefined;
     working = !working;
 
     list.insertAdjacentHTML("afterend", `<div class="list-row">
     <div class="list-cell">${beginTimeText}</div>
     <div class="list-cell">${endTimeText}</div>
-    <div class="list-cell cell-type">${typeText}</div>
+    <div class="list-cell cell-type">${typeOfBlock}</div>
 </div>`);
 }
 
@@ -67,11 +67,24 @@ function refreshCounter(){
 function checkIfEnd(){
     if (working){
         if (minutes === workLimit){
-            endTime("Work state");
+            endTime("Work block");
         }
     }else{
-        if (minutes === breakLimit){
-            endTime("Breake");
+        if (useLongBreakValue.checked){
+            if (longBreakFrequency !== currentWorkNumber){
+                if (minutes === breakLimit){
+                    endTime("Breake block");
+                }
+            }else{
+                if (minutes === longBreakLimit){
+                    endTime("Long break block")
+                    currentWorkNumber = 0;
+                }
+            }
+        }else{
+            if (minutes === breakLimit){
+                endTime("Breake block");
+            }
         }
     }
 }
@@ -84,3 +97,19 @@ function intToString(number){
         return number;
     }
 }
+
+
+function updateOptionsValues(){
+    workLimit = parseInt(workLimitValue.value);
+    breakLimit = parseInt(breakLimitValue.value);
+    longBreakLimit = parseInt(longBreakLimitValue.value);
+    longBreakFrequency = parseInt(longBreakFrequencyValue.value);
+
+    if (defaultAudioValue.checked){
+        alarmAudio.src = defaultAudioURL;
+    }else{
+        alarmAudio.src = customUrlValue.value;
+    }
+    alarmAudio.volume = parseInt(audioVolumeValue.value) / 100;
+}
+updateOptionsValues();
