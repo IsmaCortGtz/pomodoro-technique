@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="theme-color" content="#ffffff">
 
         <meta property="og:url" content="https://ismacortgtz.github.io/PomodoroTechnique/">
         <meta property="og:type" content="website">
@@ -13,6 +14,7 @@
         <meta property="og:description" content="Tool for use the pomodoro technique with work blocks, breaks and long breaks. By Ismael Cortés Gutiérrez">
 
         <title>Pomodoro</title>
+	<link rel="manifest" href="manifest.json">
         <link rel="icon" type="image/png" href="sources/icon.png">
 
         <link rel="stylesheet" href="styles/global.css">
@@ -26,6 +28,12 @@
         <script src="scripts/modules.js" defer></script>
         <script src="scripts/index.js" defer></script>
         <script src="scripts/events.js" defer></script>
+
+	<script>
+		if ("serviceWorker" in navigator){
+			navigator.serviceWorker.rehister("sw.js");
+		}
+	</script>
 
     </head>
 
