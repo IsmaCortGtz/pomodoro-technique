@@ -1,34 +1,48 @@
 {
 	"name": "Pomodoro Technique",
 	"short_name": "Pomodoro",
-	"icons": [{
-		"src": "sources/icon.png",
-		  "sizes": "128x128",
-		  "type": "image/png"
-		}, {
-		  "src": "sources/icon.png",
-		  "sizes": "144x144",
-		  "type": "image/png"
-		}, {
-		  "src": "sources/icon.png",
-		  "sizes": "152x152",
-		  "type": "image/png"
-		}, {
-		  "src": "sources/icon.png",
-		  "sizes": "192x192",
-		  "type": "image/png"
-		}, {
-		  "src": "sources/icon.png",
-		  "sizes": "256x256",
-		  "type": "image/png"
-		}, {
-		  "src": "sources/icon.png",
-		  "sizes": "512x512",
-		  "type": "image/png"
-		}],
-	"lang": "en-US",
-	"start_url": "./index.html",
+	"start_url": "./", 
+	"scope": ".",
 	"display": "standalone",
-	"background_color": "white",
-	"theme_color": "white"
+	"orientation": "portrait",
+	"background_color": "#fff",
+	"theme_color": "#640700",
+	"newBranch":"true",
+	"icons": [
+	  {
+		"src": "sources/icon.png",
+		"type": "image/png",
+		"sizes": "48x48"
+	  },
+	  {
+		"src": "sources/icon.png",
+		"type": "image/png",
+		"sizes": "96x96"
+	  },
+	  {
+		"src": "sources/icon.png",
+		"sizes": "128x128",
+		"type": "image/png"
+	  },
+	  {
+		"src": "sources/icon.png",
+		"sizes": "144x144",
+		"type": "image/png"
+	  },
+	  {
+		"src": "sources/icon.png",
+		"type": "image/png",
+		"sizes": "192x192"
+	  },
+	  {
+		"src": "sources/icon.png",
+		"type": "image/png",
+		"sizes": "256x256"
+	  },
+	  {
+		"src": "sources/icon.png",
+		"type": "image/png",
+		"sizes": "512x512"
+	  }
+	]
   }
