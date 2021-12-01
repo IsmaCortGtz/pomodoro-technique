@@ -3,12 +3,12 @@
 	"name": "Pomodoro Technique",
 	"icons": [
 		{
-			"src": "sources/icon.png",
+			"src": "/PomodoroTechnique/sources/icon.png",
 			"types": "image/png",
 			"sizes": "144x144"
 		}
 	],
-	"start_url": "index.html",
+	"start_url": "/PomodoroTechnique/index.html",
 	"background_color": "#000000",
 	"display": "standalone",
 	"theme_color": "#ffffff"
