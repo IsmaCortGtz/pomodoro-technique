@@ -1,4 +1,4 @@
-/* var filesToCache = [
+var filesToCache = [
 	"/",
 	"/PomodoroTechnique/",
 	"/PomodoroTechnique/index.html",
@@ -11,9 +11,9 @@
 	"/PomodoroTechnique/styles/header.css",
 	"/PomodoroTechnique/styles/options.css",
 	"/PomodoroTechnique/styles/responsive.css"
-]; */
+];
 var cacheName = 'PomodoroTechnique_cache';
-var filesToCache = [
+/* var filesToCache = [
 	"/",
 	"/index.html",
 	"/scripts/events.js",
@@ -25,7 +25,7 @@ var filesToCache = [
 	"/styles/header.css",
 	"/styles/options.css",
 	"/styles/responsive.css"
-];
+]; */
 
 /* Start the service worker and cache all of the app's content */
 self.addEventListener('install', function(e) {

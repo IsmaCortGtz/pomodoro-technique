@@ -3,13 +3,13 @@
 	"short_name": "Pomodoro",
 	"icons": [
 		{
-	  "src": "images/hello-icon-128.png",
+	  "src": "/PomodoroTechnique/sources/icon.png",
 		"sizes": "128x128",
 		"type": "image/png"
 	  }
 	],
 	"lang": "en-US",
-	"start_url": "/index.html",
+	"start_url": "/PomodoroTechnique/index.html",
 	"display": "standalone",
 	"background_color": "white",
 	"theme_color": "white"
