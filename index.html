@@ -40,10 +40,8 @@
         <script>
             window.onload = () => {
                 'use strict';
-
                 if ('serviceWorker' in navigator) {
-                        navigator.serviceWorker
-                            .register('./sw.js');
+                        navigator.serviceWorker.register('/PomodoroTechnique/sw.js');
                 }
             }
         </script>
