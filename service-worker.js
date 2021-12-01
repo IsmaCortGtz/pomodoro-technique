@@ -16,7 +16,7 @@
 let cacheName = "PomodoroTechnique_cache";// 👈 any unique name
 let filesToCache = [
   "/PomodoroTechnique/", // 👈 your repository name , both slash are important
-  "sw.js",
+  "service-worker.js",
 	"scripts/events.js",
 	"scripts/index.js",
 	"scripts/modules.js",
