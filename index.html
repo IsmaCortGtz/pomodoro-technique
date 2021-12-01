@@ -5,7 +5,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="theme-color" content="#ffffff">
+        
+        <link rel="apple-touch-icon" href="sources/icon.png">
+        <meta name="theme-color" content="white"/>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="Pomodoro">
+        <meta name="msapplication-TileImage" content="sources/icon.png">
+        <meta name="msapplication-TileColor" content="#FFFFFF">
 
         <meta property="og:url" content="https://ismacortgtz.github.io/PomodoroTechnique/">
         <meta property="og:type" content="website">
@@ -30,11 +37,16 @@
         <script src="scripts/index.js" defer></script>
         <script src="scripts/events.js" defer></script>
 
-	<script>
-		if (navigator.serviceWorker) {
-            navigator.serviceWorker.register('/PomodoroTechnique/sw.js', {scope: '/PomodoroTechnique/'})
-        }
-	</script>
+        <script>
+            window.onload = () => {
+                'use strict';
+
+                if ('serviceWorker' in navigator) {
+                        navigator.serviceWorker
+                            .register('./sw.js');
+                }
+            }
+        </script>
 
     </head>
 

@@ -1,15 +1,16 @@
 {
-	"short_name": "PT",
 	"name": "Pomodoro Technique",
+	"short_name": "Pomodoro",
 	"icons": [
 		{
-			"src": "/PomodoroTechnique/sources/icon.png",
-			"types": "image/png",
-			"sizes": "144x144"
-		}
+	  "src": "images/hello-icon-128.png",
+		"sizes": "128x128",
+		"type": "image/png"
+	  }
 	],
-	"start_url": "/PomodoroTechnique/index.html",
-	"background_color": "#000000",
+	"lang": "en-US",
+	"start_url": "/index.html",
 	"display": "standalone",
-	"theme_color": "#ffffff"
-}
+	"background_color": "white",
+	"theme_color": "white"
+  }
