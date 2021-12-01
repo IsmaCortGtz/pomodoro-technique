@@ -38,9 +38,13 @@
         <script src="scripts/events.js" defer></script>
 
         <script>
-            if ('serviceWorker' in navigator) {
-                navigator.serviceWorker
-                         .register('/PomodoroTechnique/sw.js');
+            window.onload = () => {
+                'use strict';
+
+                if ('serviceWorker' in navigator) {
+                    navigator.serviceWorker
+                             .register('./sw.js');
+                }
             }
         </script>
 
