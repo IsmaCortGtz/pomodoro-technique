@@ -1,7 +1,16 @@
-var cacheName = 'hello-pwa_1';
+var cacheName = 'PomodoroTechnique_v1';
 var filesToCache = [
   './',
-  './icon.png',
+  './scripts/event.js',
+  './scripts/index.js',
+  './scripts/modules.js',
+  './sources/icon.png',
+  './styles/content-counter.css',
+  './styles/content-list.css',
+  './styles/global.css',
+  './styles/header.css',
+  './styles/options.css',
+  './styles/responsive.css',
   './index.html',
   './manifest.json',
   './sw.js'
