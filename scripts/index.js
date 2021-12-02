@@ -31,7 +31,7 @@ var timer;
 var second = 0;
 var minutes = 0;
 var working = true;
-const defaultAudioURL = "https://www.fesliyanstudios.com/soundeffects/2019-05-06/Originals/Alarm-Fast-High-Pitch-A1-www.fesliyanstudios.com.mp3";
+const defaultAudioURL = "./sources/default-alarm.mp3";
 
 var currentWorkNumber = 0;
 var endTimeDate;

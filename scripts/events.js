@@ -3,10 +3,10 @@ playButton.addEventListener("click", () => {
     if (!playButton.classList.contains("blocked")){
         if (!playButton.classList.contains("played")){
             playTime();
-            playButton.innerHTML = '<i class="fas fa-pause"></i>';
+            playButton.children[0].src="sources/pause.svg";
         }else{
             clearInterval(timer);
-            playButton.innerHTML = '<i class="fas fa-play"></i>';
+            playButton.children[0].src="sources/play.svg";
         }
         playButton.classList.toggle("played");
 

@@ -1,18 +1,24 @@
 var URLS = [
   './',
+  './index.html',
+  './manifest.json',
+  './sw.js',
   './scripts/events.js',
   './scripts/index.js',
   './scripts/modules.js',
-  './sources/icon.png',
   './styles/content-counter.css',
   './styles/content-list.css',
   './styles/global.css',
   './styles/header.css',
   './styles/options.css',
   './styles/responsive.css',
-  './index.html',
-  './manifest.json',
-  './sw.js'
+  './sources/icon.png',
+  './sources/alarm.svg',
+  './sources/default-alarm.mp3',
+  './sources/exit.svg',
+  './sources/pause.svg',
+  './sources/play.svg',
+  './sources/settings.svg'
 ];
 
 var APP_PREFIX = 'PomodoroTechnique_'     // Identifier for this app (this needs to be consistent across every cache update)
