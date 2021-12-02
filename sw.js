@@ -1,7 +1,7 @@
 var cacheName = 'PomodoroTechnique_v1';
 var filesToCache = [
   './',
-  './scripts/event.js',
+  './scripts/events.js',
   './scripts/index.js',
   './scripts/modules.js',
   './sources/icon.png',
