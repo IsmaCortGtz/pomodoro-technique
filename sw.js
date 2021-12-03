@@ -22,7 +22,7 @@ var URLS = [
 ];
 
 var APP_PREFIX = 'PomodoroTechnique_'     // Identifier for this app (this needs to be consistent across every cache update)
-var VERSION = 'version_02'              // Version of the off-line cache (change this value everytime you want to update cache)
+var VERSION = 'version_03'              // Version of the off-line cache (change this value everytime you want to update cache)
 var CACHE_NAME = APP_PREFIX + VERSION
 
 // Respond with cached resources
