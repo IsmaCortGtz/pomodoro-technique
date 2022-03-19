@@ -1,5 +1,6 @@
 // Modules
 
+
 function playTime(){
     beginTimeDate = new Date;
     timer = setInterval( () => {
