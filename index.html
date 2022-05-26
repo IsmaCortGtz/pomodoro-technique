@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
     <head>
-
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        
 
         <link rel="manifest" href="manifest.json">
         <link rel="apple-touch-icon" href="sources/icon.png">
@@ -15,12 +13,11 @@
         <meta name="apple-mobile-web-app-title" content="Pomodoro Technique">
         <meta name="msapplication-TileImage" content="sources/icon.png">
         <meta name="msapplication-TileColor" content="#ffe1db">
-        
 
         <meta property="og:url" content="./">
         <meta property="og:type" content="website">
         <meta property="og:title" content="Pomodoro Technique Tool">
-        <meta property="og:image" content="./sources/icon.png">
+        <meta property="og:image" content="sources/icon.png">
         <meta property="og:description" content="Tool for use the pomodoro technique with work blocks, breaks and long breaks. By Ismael Cortés Gutiérrez">
 
         <title>Pomodoro</title>
@@ -105,9 +102,6 @@
                     </div>
 
                     <div class="options-disclaimer">
-                        *Settings will be saved when you press x
-                    </div>
-                    <div class="options-disclaimer">
                         Made by Ismael Cortés Gutiérrez
                     </div>
                     <div class="options-disclaimer">
@@ -156,8 +150,7 @@
               'use strict';
       
               if ('serviceWorker' in navigator) {
-                  navigator.serviceWorker
-                           .register('./sw.js');
+                  navigator.serviceWorker.register('./sw.js');
               }
             }
         </script>

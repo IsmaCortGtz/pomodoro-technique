@@ -22,16 +22,14 @@ alarmButton.addEventListener("click", () => {
 
 
 optionButton.addEventListener("click", () => {
-    optionsElements[0].style.zIndex = "0";
-    optionsElements[1].style.top = "5%";
-    optionsElements[0].style.opacity = "0.5";
+    optionsElements[0].style.display = "inline-block";
+    optionsElements[1].style.display = "inline-block";
 });
 
 
 optionsQuitButton.addEventListener("click", () => {
-    optionsElements[0].style.zIndex = "-1";
-    optionsElements[1].style.top = "-150%";
-    optionsElements[0].style.opacity = "0";
+    optionsElements[0].style.display = "none";
+    optionsElements[1].style.display = "none";
     updateOptionsValues();
     if (alarmWasPlaying){
         alarmWasPlaying = false;

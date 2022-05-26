@@ -1,3 +1,4 @@
+var REPOSITORY = "PomodoroTechnique";
 var URLS = [
   "./",
   "./index.html",
@@ -20,9 +21,9 @@ var URLS = [
   "./sources/settings.svg"
 ];
 
-var APP_PREFIX = "PomodoroTechnique_"     // Identifier for this app (this needs to be consistent across every cache update)
-var VERSION = "version_06"              // Version of the off-line cache (change this value everytime you want to update cache)
-var CACHE_NAME = APP_PREFIX + VERSION
+var APP_PREFIX = "PomodoroTechnique_";     // Identifier for this app (this needs to be consistent across every cache update)
+var VERSION = "version_1.1.0";              // Version of the off-line cache (change this value everytime you want to update cache)
+var CACHE_NAME = APP_PREFIX + VERSION;
 
 // Respond with cached resources
 self.addEventListener("fetch", function (e) {
