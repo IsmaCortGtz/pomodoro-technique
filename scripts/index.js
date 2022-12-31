@@ -1,3 +1,8 @@
+// Define Service Worker
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.register('./sw.js');
+}
+
 // Settings
 var workLimit = 25;
 var breakLimit = 5;
@@ -43,4 +48,3 @@ alarmAudio.loop = true;
 alarmAudioTest.loop  = true;
 
 updateOptionsValues();
-
